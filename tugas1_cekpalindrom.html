@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Palindrom</title>
+  </head>
+  <body>
+    <script>
+      let coba = "y";
+
+      while (coba == "y" || coba == "ya") {
+        let kata = prompt("Masukkan Kata yang ingin dicek Palindrom");
+        let validasi = kata.toLowerCase();
+        let text = validasi.split("");
+        let check = "";
+        let length = text.length - 1;
+        for (i = length; i >= 0; i--) {
+          check = check + text[i];
+        }
+        if (check == validasi) {
+          alert("Kata " + kata + " adalah palindrom");
+        } else {
+          alert("Kata " + kata + " bukan palindrom");
+        }
+        coba = prompt("ketik ya untuk mencoba lagi");
+      }
+    </script>
+  </body>
+</html>
