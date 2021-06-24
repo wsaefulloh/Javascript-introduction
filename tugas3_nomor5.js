@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+
 fetch('https://jsonplaceholder.typicode.com/users')
 .then(async (response) => {
     let data = await response.json()

@@ -46,7 +46,7 @@ fetch('https://reqres.in/api/users/4')
 .then(async (response) => {
     let datanew = await response.json()
     data2 = datanew.data
-    objectCompare(data3,data3)
+    objectCompare(data2,data2)
     console.log(data1)
     console.log(data2)
     console.log(data3)

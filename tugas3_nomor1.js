@@ -10,13 +10,18 @@ const cekHariKerja = (day) =>{
             } else{
                 reject(new Error('Hari ini bukan hari kerja'))
             }
-        },100)
+        },1000)
     })
 }
 
-cekHariKerja('sabtu')
-.then((cek) => {console.log(cek)})
-//keterangan
-.catch((Error) => {console.log(Error)}
-//keterangan
-)
+try {
+//blok kode yang dieksekusi untuk melakukan checking apakah terdapat error dalam blok kode ini
+    cekHariKerja('kamis')
+    .then((cek) => {console.log(cek)})
+    //Menangkap resolve (fullfill) jika promise terpenuhi
+    .catch((error) => {console.log('dari then',error)})
+    //Menangkap reject (reject) jika promise tidak terpenuhi
+} catch (error) {
+//blok kode yang ditampilkan jika terjadi error pada blok try
+    console.log('dari try',error)
+}

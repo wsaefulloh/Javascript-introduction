@@ -14,7 +14,7 @@ const checkPass = (a,b)=>{
         while (newPass.length <= 8) {
             num = Math.floor(Math.random() * 9)
             str = Math.floor(Math.random() * 25)
-            rand = arrnumber[num] + arrstring[str].split('')
+            rand = (arrnumber[num] + arrstring[str]).split('')
             newPass = newPass + rand[Math.floor(Math.random() * 2)]
         }
 
@@ -23,7 +23,7 @@ const checkPass = (a,b)=>{
             num = Math.floor(Math.random() * 9)
             str = Math.floor(Math.random() * 25)
             upstr = Math.floor(Math.random() * 25)
-            rand = arrupstring[upstr] + arrnumber[num] + arrstring[str].split('')
+            rand = (arrupstring[upstr] + arrnumber[num] + arrstring[str]).split('')
             newPass = newPass + rand[Math.floor(Math.random() * 3)]
         }
 
@@ -33,11 +33,11 @@ const checkPass = (a,b)=>{
             str = Math.floor(Math.random() * 25)
             upstr = Math.floor(Math.random() * 25)
             spc = Math.floor(Math.random() * 6)
-            rand = arrspecial[spc] + arrupstring[upstr] + arrnumber[num] + arrstring[str].split('')
+            rand = (arrspecial[spc] + arrupstring[upstr] + arrnumber[num] + arrstring[str]).split('')
             newPass = newPass + rand[Math.floor(Math.random() * 4)]
         }
     }
-    console.log(newPass.slice(0,7))
+    console.log(newPass.slice(0,8))
 }
 
-checkPass('abcd','strong')
+checkPass('abcd','low')
