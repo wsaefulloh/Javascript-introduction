@@ -14,14 +14,21 @@ const cekHariKerja = (day) =>{
     })
 }
 
-try {
-//blok kode yang dieksekusi untuk melakukan checking apakah terdapat error dalam blok kode ini
-    cekHariKerja('kamis')
-    .then((cek) => {console.log(cek)})
-    //Menangkap resolve (fullfill) jika promise terpenuhi
-    .catch((error) => {console.log('dari then',error)})
-    //Menangkap reject (reject) jika promise tidak terpenuhi
-} catch (error) {
-//blok kode yang ditampilkan jika terjadi error pada blok try
-    console.log('dari try',error)
-}
+// cekHariKerja('kamis')
+//     .then((cek) => {console.log(cek)})
+//     //Menangkap resolve (fullfill) jika promise terpenuhi
+//     .catch((error) => {console.log('dari then',error)})
+//     //Menangkap reject (reject) jika promise tidak terpenuhi
+
+const coba = ( async (day) => {
+    try {
+        //blok kode yang dieksekusi untuk melakukan checking apakah terdapat error dalam blok kode ini
+        let result = await cekHariKerja(day)
+        console.log('Hari ' + day + ' adalah hari kerja')
+        } catch (error) {
+        //blok kode yang ditampilkan jika terjadi error pada blok try
+            console.log('dari try',error)
+        }
+})
+
+coba('kamis')

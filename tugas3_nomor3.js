@@ -10,6 +10,7 @@ const checkPass = (a,b)=>{
     let str
     let upstr
     let spc
+    let rand
     if (b=='low') {
         while (newPass.length <= 8) {
             num = Math.floor(Math.random() * 9)
@@ -40,4 +41,4 @@ const checkPass = (a,b)=>{
     console.log(newPass.slice(0,8))
 }
 
-checkPass('abcd','low')
+checkPass('abcd','strong')

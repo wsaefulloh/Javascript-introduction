@@ -12,7 +12,7 @@ const getmonth = (callback)=>{
 
 getmonth((a,b) => {
     if (a==null) {
-        let newArr = b.map((some)=>{
+        b.map((some)=>{
             console.log(some)
         })        
     } else{

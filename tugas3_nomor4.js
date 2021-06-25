@@ -1,29 +1,29 @@
-const cekPalindrom = (kata) =>{
-    return new Promise((resolve, reject)=>{
-        setTimeout(()=>{
+// const cekPalindrom = (kata) =>{
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(()=>{
 
-            let validasi = kata.toLowerCase();
-            let text = validasi.split("");
-            let check = "";
-            let length = text.length - 1;
-            for (i = length; i >= 0; i--) {
-                check = check + text[i];
-            }
+//             let validasi = kata.toLowerCase();
+//             let text = validasi.split("");
+//             let check = "";
+//             let length = text.length - 1;
+//             for (i = length; i >= 0; i--) {
+//                 check = check + text[i];
+//             }
 
-            if (check == validasi) {
-                resolve (kata);
-            } else {
-                reject (new Error('Kata ' + kata + ' bukan palindrom'));
-            }
-        },100)
-    })
-}
+//             if (check == validasi) {
+//                 resolve (kata);
+//             } else {
+//                 reject (new Error('Kata ' + kata + ' bukan palindrom'));
+//             }
+//         },1000)
+//     })
+// }
 
-cekPalindrom('kata')
-.then((kata) => {console.log("Kata " + kata + " adalah palindrom")})
-.catch((Error) => {console.log(Error)})
+// cekPalindrom('malam')
+// .then((kata) => {console.log("Kata " + kata + " adalah palindrom")})
+// .catch((Error) => {console.log(Error)})
 
-/*let data = [{
+let data = [{
     id: 1,
     name: 'Ervin Howell',
     email: 'shanna@melissa.tv'
@@ -49,10 +49,10 @@ const cekData = (id) =>{
             } else {
                 reject (new Error('id tidak ditemukan'));
             }
-        }, 100)
+        }, 1000)
     })
 }
 
-cekData(1)
+cekData(4)
 .then((id) => {console.log(data[id-1])})
-.catch((Error) => {console.log(Error)})*/
+.catch((Error) => {console.log(Error)})
