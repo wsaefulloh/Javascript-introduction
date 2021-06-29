@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/wsaefulloh/Javascript-introduction#readme",
   "dependencies": {
+    "node-fetch": "^2.6.1",
     "npm-fetch": "0.0.9"
   }
 }
