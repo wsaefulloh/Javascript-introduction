@@ -1,4 +1,3 @@
-
 const checkPass = (a,b)=>{
     let arrnumber = '0123456789'.split('')
     let string = 'abcdefghijklmnopqrstuvwxyz'
@@ -41,4 +40,4 @@ const checkPass = (a,b)=>{
     console.log(newPass.slice(0,8))
 }
 
-checkPass('abcd','strong')
+checkPass('abcd','low')
