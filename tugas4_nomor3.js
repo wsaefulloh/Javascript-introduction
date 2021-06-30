@@ -30,6 +30,13 @@ const findRepeatName = ((data) => {
         console.log(sorted)
         console.log(sorted[sorted.length - 1])
 
+        for (let i = 0; i < sorted.length; i++) {
+            if (freq[i] == sorted[sorted.length - 1]) {
+                console.log(data[i])
+                break
+            }
+        }
+
     } else {
         console.log('Data tidak boleh kosong')
     }
