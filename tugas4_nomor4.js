@@ -1,6 +1,6 @@
 const findClosestNumb = ((data,num) => {
     let selisih = []
-    let closest = data[data.length - 1]
+    let closest = Math.max(...data)
     for (let i = 0; i < data.length; i++) {
         let cek = Math.abs(num - data[i])
         if (closest > cek) {
