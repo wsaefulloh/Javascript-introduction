@@ -1,5 +1,5 @@
 const divideAndSort = (data) => {
-  if (typeof(data) == 'number') {
+  if (typeof data == "number") {
     let newString = data.toString();
     let newArray = newString.split("0");
     let fixArray = [];
@@ -13,9 +13,9 @@ const divideAndSort = (data) => {
       let Sort = fixArray[i].join("");
       fixSort.push(Sort);
     }
-    let fix = fixSort.join("")
-    fix = parseInt(fix)
-    console.log(fix)
+    let fix = fixSort.join("");
+    fix = parseInt(fix);
+    console.log(fix);
   } else {
     console.log("data yang dimasukkan harus berupa number");
   }

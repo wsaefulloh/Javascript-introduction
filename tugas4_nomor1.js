@@ -13,4 +13,4 @@ let cekPalindrom = (kata) => {
     }
 };
 
-cekPalindrom('mAlam')
+cekPalindrom('malam')
