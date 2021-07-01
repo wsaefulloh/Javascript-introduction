@@ -1,0 +1,23 @@
+{
+  "name": "javascript-introduction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tugas3_nomor1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsaefulloh/Javascript-introduction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wsaefulloh/Javascript-introduction/issues"
+  },
+  "homepage": "https://github.com/wsaefulloh/Javascript-introduction#readme",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "node": "^16.4.0"
+  }
+}
